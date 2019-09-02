@@ -1,1 +1,4 @@
-
+# 使用multinom做多类别logistic回归
+library(nnet)
+UG_lg = multinom(CI ~ c1 + c2 + c3, data = UG_df.lg);
+summary(UG_lg)
